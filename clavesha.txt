@@ -1,0 +1,38 @@
+
+> Task :app:signingReport
+Variant: debug
+Config: debug
+Store: C:\Users\diego.chica\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 73:88:AF:B2:88:76:9A:22:5F:8F:8F:8D:0B:ED:E7:AE
+SHA1: A8:65:7F:F5:ED:01:19:BC:4B:F0:23:6F:91:C0:3D:FB:D5:AA:CC:A9
+SHA-256: 5F:80:FD:17:21:D6:4B:3F:FE:8A:E6:71:80:EA:4F:EE:15:8E:BF:19:BD:6A:F4:D8:C9:D3:A8:BE:BF:53:2B:4C
+Valid until: viernes 18 de febrero de 2050
+----------
+Variant: release
+Config: none
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: C:\Users\diego.chica\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 73:88:AF:B2:88:76:9A:22:5F:8F:8F:8D:0B:ED:E7:AE
+SHA1: A8:65:7F:F5:ED:01:19:BC:4B:F0:23:6F:91:C0:3D:FB:D5:AA:CC:A9
+SHA-256: 5F:80:FD:17:21:D6:4B:3F:FE:8A:E6:71:80:EA:4F:EE:15:8E:BF:19:BD:6A:F4:D8:C9:D3:A8:BE:BF:53:2B:4C
+Valid until: viernes 18 de febrero de 2050
+----------
+Variant: debugUnitTest
+Config: debug
+Store: C:\Users\diego.chica\.android\debug.keystore
+Alias: AndroidDebugKey
+MD5: 73:88:AF:B2:88:76:9A:22:5F:8F:8F:8D:0B:ED:E7:AE
+SHA1: A8:65:7F:F5:ED:01:19:BC:4B:F0:23:6F:91:C0:3D:FB:D5:AA:CC:A9
+SHA-256: 5F:80:FD:17:21:D6:4B:3F:FE:8A:E6:71:80:EA:4F:EE:15:8E:BF:19:BD:6A:F4:D8:C9:D3:A8:BE:BF:53:2B:4C
+Valid until: viernes 18 de febrero de 2050
+----------
+Variant: releaseUnitTest
+Config: none
+----------
+
+BUILD SUCCESSFUL in 8s
+1 actionable task: 1 executed
