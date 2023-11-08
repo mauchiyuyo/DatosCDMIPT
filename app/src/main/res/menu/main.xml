@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnuReportes"
+        android:icon="@drawable/ic_reporte"
+        android:title="Reporte tabular"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mnuIPT"
+        android:icon="@drawable/ic_ipt_t_foreground"
+        android:title="Actividades IPT"
+        app:showAsAction="ifRoom"/>
+    <group>
+        <item
+            android:id="@+id/mnuEditorNFC"
+            android:icon="@drawable/ic_nfc_editor"
+            android:title="Editor NFC"
+            android:enabled="false"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/mnuRestoreDB"
+            android:icon="@drawable/ic_restorebd"
+            android:title="Restaurar BD inicial"
+            android:enabled="false"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/mnuBackupDB"
+            android:icon="@drawable/ic_bkupbd"
+            android:title="Respaldar BD inicial"
+            android:enabled="false"
+            android:visible="false"
+            app:showAsAction="ifRoom"/>
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/mnuLogout"
+            android:icon="@drawable/ic_exit_editornfc"
+            android:title="Salir - Cerrar Sesión"
+            app:showAsAction="ifRoom"/>
+
+    </group>
+</menu>

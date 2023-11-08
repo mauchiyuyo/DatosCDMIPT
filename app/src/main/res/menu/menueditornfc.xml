@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mnuNFCReportes"
+        android:icon="@drawable/ic_reporte"
+        android:title="Reporte tabular"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mnuExitNFC"
+        android:icon="@drawable/ic_exit_editornfc"
+        android:title="Cerrar Editor NFC"
+        app:showAsAction="ifRoom"/>
+</menu>

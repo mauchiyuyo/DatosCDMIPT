@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "58135159505",
+    "project_id": "datoscdmipt",
+    "storage_bucket": "datoscdmipt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58135159505:android:348dcd6eb3a5d78cd95bf0",
+        "android_client_info": {
+          "package_name": "ec.gob.celec.datoscdmipt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58135159505-t9tv1s5qf4bg1hegj6nhqvkc1efdg7m9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ec.gob.celec.datoscdmipt",
+            "certificate_hash": "a8657ff5ed0119bc4bf0236f91c03dfbd5aacca9"
+          }
+        },
+        {
+          "client_id": "58135159505-bdu73q2smtqp20im4tfeif75db63mgtm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Zs-ynRYr4qXvRqX9bpkmgy7KaVxwIkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58135159505-bdu73q2smtqp20im4tfeif75db63mgtm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

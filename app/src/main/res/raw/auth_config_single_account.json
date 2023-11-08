@@ -1,0 +1,16 @@
+{
+  "client_id" : "d11bb7c7-2fb7-4f82-8e92-4959bf098d62",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://ec.gob.celec.datoscdmipt/fdvh5AOHK1EKm1NdxoI8SawEEC0%3D",
+  "broker_redirect_uri_registered" : false,
+  "account_mode" : "SINGLE",
+  "authorities" : [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "00460663-ae36-41a3-a135-08f8a06015b0"
+      }
+    }
+  ]
+}
