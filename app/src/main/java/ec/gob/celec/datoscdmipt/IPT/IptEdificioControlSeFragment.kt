@@ -9,13 +9,14 @@ import ec.gob.celec.datoscdmipt.R
 
 /**
  * A simple [Fragment] subclass.
- * Use the [PatioIPTManiobrasSEFragment.newInstance] factory method to
+ * Use the [IptEdificioControlSeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-class PatioIPTManiobrasSEFragment : Fragment() {
+
+class IptEdificioControlSeFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -33,7 +34,7 @@ class PatioIPTManiobrasSEFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ipt_patio_maniobras_s_e, container, false)
+        return inflater.inflate(R.layout.fragment_ipt_edificio_control_se, container, false)
     }
 
     companion object {
@@ -43,12 +44,12 @@ class PatioIPTManiobrasSEFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment PatioManiobrasSEFragment.
+         * @return A new instance of fragment IptEdificioControlSeFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            PatioIPTManiobrasSEFragment().apply {
+            IptEdificioControlSeFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -5,8 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ec.gob.celec.datoscdmipt.ARG_PARAM1
-import ec.gob.celec.datoscdmipt.ARG_PARAM2
 import ec.gob.celec.datoscdmipt.R
 
 /**
@@ -14,6 +12,9 @@ import ec.gob.celec.datoscdmipt.R
  * Use the [TablerosSF6DisyuntoresSE.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 class TablerosSF6DisyuntoresSE : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
