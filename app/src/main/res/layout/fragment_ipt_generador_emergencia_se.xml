@@ -3,12 +3,634 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IptGeneradorEmergenciaSeFragment">
+    tools:context=".IptGeneradorEmergenciaSeFragment"
+    android:theme="@style/DarkTheme"
+    android:background="@drawable/bordepersonalizado_menor">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_margin="9dp"
+        android:background="@drawable/bordepersonalizado_menor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GENERADOR DE EMERGECIA S/E"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:layout_margin="9dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/bordepersonalizado_menor">
+
+            <TableRow
+                android:background="@drawable/bordepersonalizado_menor">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión y prueba de funcionamiento durante 10 min del generador de emergencia sin carga"
+                    android:textColor="@color/white"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center_vertical">
+                    <RadioButton
+                        android:id="@+id/rbPruebaSinCargaSi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"/>
+                    <RadioButton
+                        android:id="@+id/rbPruebaSinCargaNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_marginLeft="12dp"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:textColor="@color/white"/>
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/txtPruebasSinCarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:hint="Revisión y pruebas"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/bordepersonalizado_menor">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Revisión y prueba de funcionamiento durante 10 min del generador de emergencia con carga"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center_vertical">
+                    <RadioButton
+                        android:id="@+id/rbPruebaConCargaSi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:gravity="center_vertical"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"/>
+                    <RadioButton
+                        android:id="@+id/rbPruebaConCargaNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_marginLeft="12dp"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"/>
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/txtPruebaConCarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:hint="Pruebas con carga"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_span="3">
+
+                    <TableRow android:layout_gravity="center">
+                        <TextView android:layout_span="4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="GENERADOR DE EMERGENCIA-MOTOR DE COMBUSTIÓN INTERNA"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Temp. Agua"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Temp. Aceite"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Presión Aceite"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Nivel Aceite"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Velocidad"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Total Horas Motor"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Total de arranques"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Motor"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Voltaje Batería"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Eléctricos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Frecuencia"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Eléctricos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Voltaje L-L"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Eléctricos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Voltaje L-N"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Eléctricos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Energía Activa Total"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="DATOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Eléctricos"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Energía Reactiva Total"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/bordepersonalizado_menor">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inspección del tablero de control "
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center_vertical">
+                    <RadioButton
+                        android:id="@+id/rdGEInspeccionTableroControlSi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sí"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:gravity="center_vertical"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"/>
+                    <RadioButton
+                        android:id="@+id/rdGEInspeccionTableroControlNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:layout_marginLeft="12dp"
+                        android:height="54dp"
+                        android:width="60dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/white"/>
+                </RadioGroup>
+                <EditText
+                    android:id="@+id/txtGEInspeccionTableroControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:hint="Inspección de tablero de control"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center_horizontal">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_span="3">
+
+                    <TableRow android:layout_gravity="center">
+                        <TextView android:layout_span="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="NIVEL COMBUSTILE (cm)"/>
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Tanque Diario"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Tanque Reserva"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/gray"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:text="Valor 0.0"/>
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
 
 </FrameLayout>
