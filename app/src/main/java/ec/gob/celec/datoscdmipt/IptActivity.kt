@@ -35,6 +35,7 @@ import ec.gob.celec.datoscdmipt.database.models.usuario
 import ec.gob.celec.datoscdmipt.fragmentos.CustomAdapter
 import ec.gob.celec.datoscdmipt.fragmentos.CustomAdapterDetail
 import ec.gob.celec.datoscdmipt.fragmentos.SplashnfcFragment
+import kotlinx.coroutines.selects.select
 import org.json.JSONArray
 import org.json.JSONObject
 import java.text.SimpleDateFormat
@@ -268,6 +269,41 @@ class IptActivity : AppCompatActivity() {
             actualMRID = tareaIPT.get("MRID").toString()
 
             operador = dbHandler.getUsuarioByID(txtIPTidUsuario)
+
+            // seleccionar el fragmento correcto dependiendo de la tarea marcada
+            // usa el id de cada actividad para determinar qué fragmento abrir
+            when(tareaIPT.get("act_id")){
+                1 -> {
+
+                }
+                2 -> {
+
+                }
+                3 -> {
+
+                }
+                4 -> {
+
+                }
+                5 -> {
+
+                }
+                6 -> {
+
+                }
+                7 -> {
+
+                }
+                8 -> {
+
+                }
+                9 -> {
+
+                }
+                else -> {
+
+                }
+            }
 
             cargarDetallesTareaIPT(tareaIPT)
 
