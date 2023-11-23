@@ -149,26 +149,6 @@ class EditornfcActivity : AppCompatActivity(), Listener {
         }
     }
 
-    private fun llenarSpinnerSubSistemas(id_sistema : Int) : Int{
-        val subsistemas = dbHandler.getListSubSistemas(id_sistema)
-        val nombres = ArrayList<String>()
-        val spElementos = findViewById<Spinner>(R.id.spSubSistema)
-        var spinnerAdaptador : ArrayAdapter<String>? = null
-        // = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombres)
-
-        if(subsistemas.size > 0) {
-            spElementos.isEnabled = true
-            for(i in 0 until subsistemas.size){
-                nombres.add(subsistemas[i].id.toString() + " - " + subsistemas[i].subsistema)
-            }
-            spinnerAdaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombres)
-        } else {
-            spElementos.isEnabled = false
-        }
-        spElementos.adapter = spinnerAdaptador
-        return subsistemas.size
-    }
-
     private fun llenarSpinnerCentrales(){
         val centrales = dbHandler.getListCentrales()
         val nombres = ArrayList<String>()
@@ -201,6 +181,26 @@ class EditornfcActivity : AppCompatActivity(), Listener {
         val spElementos = findViewById<Spinner>(R.id.spSistemasIPT)
         val spinnerAdaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombres)
         spElementos.adapter = spinnerAdaptador
+    }
+
+    private fun llenarSpinnerSubSistemas(id_sistema : Int) : Int{
+        val subsistemas = dbHandler.getListSubSistemas(id_sistema)
+        val nombres = ArrayList<String>()
+        val spElementos = findViewById<Spinner>(R.id.spSubSistema)
+        var spinnerAdaptador : ArrayAdapter<String>? = null
+        // = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombres)
+
+        if(subsistemas.size > 0) {
+            spElementos.isEnabled = true
+            for(i in 0 until subsistemas.size){
+                nombres.add(subsistemas[i].id.toString() + " - " + subsistemas[i].subsistema)
+            }
+            spinnerAdaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, nombres)
+        } else {
+            spElementos.isEnabled = false
+        }
+        spElementos.adapter = spinnerAdaptador
+        return subsistemas.size
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
