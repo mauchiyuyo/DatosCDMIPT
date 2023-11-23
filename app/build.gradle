@@ -9,12 +9,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
+    //compileSdkVersion 33
 
     defaultConfig {
         applicationId 'ec.gob.celec.datoscdmipt'
         minSdkVersion 26
-        targetSdk 32
+        targetSdk 33
+        compileSdk 34
         versionCode 1
         versionName "3.1"
 

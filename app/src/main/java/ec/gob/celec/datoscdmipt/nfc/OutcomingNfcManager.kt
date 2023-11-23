@@ -6,6 +6,7 @@ import android.nfc.NdefMessage
 import android.nfc.NdefRecord
 import android.nfc.NfcAdapter
 import android.nfc.NfcEvent
+import ec.gob.celec.datoscdmipt.MIME_TEXT_PLAIN
 
 class OutcomingNfcManager(
     private val nfcActivity: NfcActivity

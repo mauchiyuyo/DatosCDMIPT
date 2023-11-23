@@ -39,7 +39,6 @@ import ec.gob.celec.datoscdmipt.fragmentos.TablaValoresFragment
 import ec.gob.celec.datoscdmipt.helpers.CheckNetworkConnection
 import ec.gob.celec.datoscdmipt.login.LoginADActivity
 import ec.gob.celec.datoscdmipt.nfc.EditornfcActivity
-import ec.gob.celec.datoscdmipt.nfc.MIME_TEXT_PLAIN
 import ec.gob.celec.datoscdmipt.reporteria.ReporteriaActivity
 import ec.gob.celec.datoscdmipt.sincronizador.MySingleton
 import ec.gob.celec.datoscdmipt.sincronizador.NetworkStateChecker
@@ -53,6 +52,8 @@ import java.nio.channels.FileChannel
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.*
+
+const val MIME_TEXT_PLAIN = "text/plain"
 
 @Suppress("DEPRECATION")
 class PrincipalActivity : AppCompatActivity() {

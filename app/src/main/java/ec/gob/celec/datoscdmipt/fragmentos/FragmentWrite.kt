@@ -17,10 +17,10 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import ec.gob.celec.datoscdmipt.MIME_TEXT_PLAIN
 import ec.gob.celec.datoscdmipt.R
 import ec.gob.celec.datoscdmipt.listeners.Listener
 import ec.gob.celec.datoscdmipt.nfc.EditornfcActivity
-import ec.gob.celec.datoscdmipt.nfc.MIME_TEXT_PLAIN
 import org.json.JSONArray
 import java.io.IOException
 import java.io.UnsupportedEncodingException
