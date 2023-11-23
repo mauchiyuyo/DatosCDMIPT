@@ -50,7 +50,8 @@
                         android:height="54dp"
                         android:width="60dp"
                         android:gravity="center_vertical"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white"
+                        android:background="@color/gray"/>
                     <RadioButton
                         android:id="@+id/rbPruebaSinCargaNo"
                         android:layout_width="wrap_content"

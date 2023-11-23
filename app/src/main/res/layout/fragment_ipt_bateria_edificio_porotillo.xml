@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IPT.IptBateriaEdificioPorotilloFragment"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    android:theme="@style/DarkTheme">
+
+    <LinearLayout
+        android:scrollbars="vertical"
+        android:isScrollContainer="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="9dp"
+        android:background="@drawable/bordepersonalizado_menor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MEDICIÓN DE VOLTAJE DE BATERIAS POROTILLO"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="?attr/bgColor"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1"
+            android:layout_margin="9dp"
+            android:scrollbars="vertical"
+            android:background="@drawable/bordepersonalizado_menor"
+            android:divider="@color/gray"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:isScrollContainer="true">
+
+            <TableRow
+
+                android:layout_margin="9dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bordepersonalizado_menor">
+                <TextView android:text="Banco"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bordepersonalizado_menor"
+                    android:textAlignment="center"/>
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:paddingLeft="6dp"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+                    <TableRow>
+                        <TextView
+                            android:text="Tensión"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/bordepersonalizado_menor"/>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+            <TableRow android:background="@drawable/bordepersonalizado_menor"
+                android:padding="9dp"
+                android:weightSum="2">
+                <TextView
+                    android:background="@drawable/bordepersonalizado_menor"
+                    android:text="Banco 1"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"/>
+
+                <EditText android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/bordepersonalizado_menor"
+                    android:text="0.00"
+                    android:textColor="@color/white" />
+            </TableRow>
+            <TableRow android:background="@drawable/bordepersonalizado_menor"
+                android:padding="9dp"
+                android:weightSum="2">
+                <TextView
+                    android:background="@drawable/bordepersonalizado_menor"
+                    android:text="Banco 2"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"/>
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+                    <TableRow>
+                        <EditText android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:background="@drawable/bordepersonalizado_menor"
+                            android:text="0.00"
+                            android:textColor="@color/white"/>
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

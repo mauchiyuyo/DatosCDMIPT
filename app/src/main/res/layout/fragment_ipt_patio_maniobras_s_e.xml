@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IPT.PatioIPTManiobrasSEFragment"
-    android:background="?attr/bgColor"
-    android:theme="@style/DarkTheme">
+    android:theme="@style/DarkTheme"
+    android:background="@drawable/bordepersonalizado_menor">
 
     <LinearLayout
         android:layout_width="match_parent"

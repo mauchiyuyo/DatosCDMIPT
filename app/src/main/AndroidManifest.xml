@@ -30,13 +30,16 @@
             android:name=".IptActivity"
             android:exported="false"
             android:label="@string/title_activity_ipt"
-            android:theme="@style/Theme.MaterialComponents.DayNight" />
+            android:theme="@style/Theme.MaterialComponents.DayNight"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".nfc.EditorEtiquetasNFCActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".login.LoginADActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -62,7 +65,8 @@
         <activity
             android:name=".PrincipalActivity"
             android:exported="true"
-            android:launchMode="singleTop">
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
                 <action android:name="android.intent.action.MAIN" />
@@ -101,7 +105,8 @@
         </service>
         <!-- Intent filter to capture System Browser or Authenticator calling back to our app after sign-in -->
         <activity android:name="com.microsoft.identity.client.BrowserTabActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -156,7 +161,8 @@
         </activity>
         <activity
             android:name=".nfc.EditornfcActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>
@@ -175,7 +181,8 @@
         </activity>
         <activity
             android:name=".reporteria.ReporteriaActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
             </intent-filter>

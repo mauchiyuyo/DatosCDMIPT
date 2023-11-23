@@ -6,7 +6,8 @@
     tools:context=".IPT.PrarrayosSEFragment"
     android:isScrollContainer="true"
     android:scrollbars="vertical"
-    android:theme="@style/DarkTheme">
+    android:theme="@style/DarkTheme"
+    android:background="@drawable/bordepersonalizado_menor">
 
     <LinearLayout
         android:scrollbars="vertical"

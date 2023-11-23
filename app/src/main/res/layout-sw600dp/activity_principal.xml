@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:theme="@style/DarkTheme"
+    android:background="@drawable/bordepersonalizado_menor">
 
     <HorizontalScrollView
         android:layout_height="match_parent"
